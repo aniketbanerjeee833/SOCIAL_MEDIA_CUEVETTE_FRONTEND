@@ -1,0 +1,823 @@
+.view-story-section{
+    border:2px solid black;
+    background-color: white; 
+    
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    
+    
+ 
+
+background: rgba(0, 0, 0, 0.9);
+
+  
+    }
+    .video-1{
+      object-fit: cover;
+    
+      width: 100%;
+      height: 400px;
+      
+      }
+    .view-story-form{
+        
+       
+        gap:10px;
+        width:20rem;
+        height:25rem;
+    position:fixed;
+    top:20%;
+    left: 35%;
+
+    /* Group 62 */
+  
+    display: grid;
+    grid-template-rows: repeat(0.2fr,1fr,0.4fr);
+      gap:20px;
+    }
+    /* .view-story-content{
+        width: 10rem;
+        height:16rem;
+        display: flex;
+        border: 1px solid black;
+       
+      
+    } */
+    .view-story-form-1{
+        
+       
+      gap:10px;
+      width:20rem;
+      height:25rem;
+  position:fixed;
+  top:20%;
+  left: 35%;
+
+  /* Group 62 */
+
+  display: grid;
+ 
+  grid-template-rows: repeat(0.2fr,1fr,0.4fr);
+    gap:20px;
+  }
+
+  .first-div-1{
+  
+    position: absolute;
+    top:20px;
+    width: 100%;
+  }
+  .second-div-1{
+ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    
+  }
+.view-story-content-heading-1{
+  /* position: absolute; */
+  position: absolute;
+  bottom:80px;
+    left:10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    font-size: 16px;
+    /* display: flex;
+   flex-wrap: nowrap; */
+      color:white   
+    
+}
+.view-story-content-description-1{
+  /* position: absolute; */
+
+  position: absolute;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  left:10px;
+font-size: 16px;
+height: 50px;
+  bottom:30px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  color: #FFFFFF;
+  overflow-wrap: break-word; /* Allow long words to break */
+word-wrap: break-word; /
+}
+.view-story-content-description-content-1{
+  
+  color:white ;
+  
+ }
+  .view-story-div-bookmark-like-1{
+    display: flex;
+      width: 95%;
+     
+      position:absolute;
+      bottom:10px;
+  
+ 
+  
+    justify-content: space-between;
+    
+ & button{
+    background-color: transparent;
+ border: none;
+    
+  }
+}
+    .view-story-div-dash-3{
+      /* display: flex;
+      justify-content: space-evenly; */
+     width: 90%;
+     
+      position: relative;
+      bottom: 40px;
+      left:10px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap:15px;
+      
+     
+   }
+   
+    .view-story-div-dash-4{
+      /* display: flex;
+      justify-content: space-evenly; */
+     width: 90%;
+     
+      position: relative;
+      bottom: 40px;
+      left:10px;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap:15px;
+      
+     
+   }
+   .view-story-div-dash-6{
+    /* display: flex;
+    justify-content: space-evenly; */
+   width: 90%;
+   
+    position: relative;
+    bottom: 40px;
+    left:10px;
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   gap:15px;
+    
+   
+ }
+ .view-story-div-dash-5{
+  /* display: flex;
+  justify-content: space-evenly; */
+ width: 90%;
+ 
+  position: relative;
+  bottom: 40px;
+  left:10px;
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+ gap:15px;
+  
+ 
+}
+   .dash-active{
+     
+      font-size: 1.5rem;
+      font-weight: 400;
+      color:white;
+      width:2rem;
+      height:2rem;
+      position: relative;
+      top:10px
+    
+ 
+      
+    }
+    .dash{
+      
+       opacity: 0.4;
+      font-weight: 400;
+      font-size: 1.5rem;
+      /* Rectangle 43 */
+       color: white;
+       width:2rem;
+       position: relative;
+       top:10px
+ 
+ 
+ 
+ 
+    }
+   
+    
+   .view-story-div-heading{
+      display: flex;
+      max-width: 90%;
+      left:10px;
+      justify-content: space-between;
+     
+      position: relative;
+      bottom: 40px;
+      color: white;
+       & span{
+         cursor: pointer;
+       }
+     }
+   .second-div{
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+   }
+     .view-story-content-heading{
+      position: absolute;
+    bottom:80px;
+      left:10px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      font-size: 16px;
+      /* display: flex;
+     flex-wrap: nowrap; */
+        color:white
+     }
+     .view-story-content-description{
+      position: absolute;
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      left:10px;
+  font-size: 16px;
+  height: 50px;
+      bottom:30px;
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      color: #FFFFFF;
+      overflow-wrap: break-word; /* Allow long words to break */
+    word-wrap: break-word; /* Fallback for older browsers */
+      
+     }
+     .view-story-content-description-content{
+      
+      color:white ;
+      
+     }
+
+
+     .view-story-div-bookmark-like{
+      display: flex;
+      width: 95%;
+     
+      position:absolute;
+      bottom:0px;
+   
+    left:10px;
+      justify-content: space-between;
+      
+   & button{
+      background-color: transparent;
+   border: none;
+}
+        
+
+     }
+     .view-story-div-bookmark-like-second{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+     }
+
+     .liked-slides-count{
+      
+      color: white;
+      font-size: 1.2rem;
+
+    }
+     .icon{
+      width: 25px;
+      height: 25px;
+     color: white;
+     border: none;
+      cursor: pointer;
+       &:hover{
+       
+       
+        color: red;
+      }
+   }
+
+   .icon-active{
+    width: 25px;
+    height: 25px;
+  color: red;
+    border: none;
+    cursor: pointer;
+     &:hover{
+     
+     
+       color: red; 
+    }
+ }
+   
+   .bookmark-icon{
+      width: 25px;
+      height: 25px;
+      color: white;
+      border: none;
+      cursor: pointer;
+       &:hover{
+     
+         color: white;  
+      }
+   }
+
+   .bookmark-icon-active{
+
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    &:hover{
+     
+      color: blue  
+   }
+   }
+
+   .download-icon{
+    width: 35px;
+    height: 35px;
+    border: none;
+    color:  #FFFFFF;
+
+    cursor: pointer;
+   
+    & .d-icon{
+      width: 20px;
+      height: 20px;
+    }
+   }
+   .download-over-icon{
+    width: 25px;
+    height: 25px;
+    border: none;
+    color:  #FFFFFF;
+
+    cursor: pointer;
+    & .d-icon{
+      width: 20px;
+      height: 20px;
+    }
+   }
+/* .icon-active{
+   background-color: red;
+} */
+.common-arrow-button-forward{
+  position: absolute;
+  top:300px;
+  left:700px;
+  z-index:1;
+  background-color: transparent;
+  border:none
+} 
+.common-arrow-button-back{
+  position: absolute;
+  top:300px;
+  left:180px;
+  z-index:1;
+  background-color: transparent;
+  border:none
+} 
+.forward-icon-active , .back-icon-active{
+  width:40px;
+  color:white;
+  height:40px;
+  cursor: pointer;
+}
+.forward-icon , .back-icon{
+  width:40px;
+  color:white;
+  height:40px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.view-story-form-responsive{
+ 
+
+  display: none;
+
+}
+.view-story-form-responsive-1{
+ 
+
+  display: none;
+
+}
+/* 
+@media(max-width: 1000px){
+  .common-arrow-button-forward{
+    position: relative;
+    top:300px;
+    left:700px;
+    z-index:1;
+    background-color: transparent;
+    border:none
+  } 
+  .common-arrow-button-back{
+    position: relative;
+    top:290px;
+    left:180px;
+    z-index:1;
+    background-color: transparent;
+    border:none
+  } 
+
+  
+} */
+
+@media(max-width: 768px){
+  .view-story-form{
+   display: none;
+   }
+
+   .view-story-form-1{
+    display: none;
+   }
+  .view-story-section{
+   
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9)
+  }
+  .view-story-image{
+    width: 390px;
+    height:730px; 
+    background-size: cover;
+  }
+  .view-story-form-responsive{
+    /* overflow-y: hidden; */
+    gap: 10px;
+     /* width: 80%;
+    height: 100%;  */
+    gap: 10px;
+    width: 80%;
+    /* height: 100%;   */
+    position: absolute;
+   height: 80%;
+    left: 9%;
+   top:5%;
+   
+    /* top: 0;
+    left: 0;
+    /* position: relative;
+      top: 20%; */
+ 
+    /* max-height: 730px;
+    border: 2px solid white; */
+    display: grid;
+    grid-template-rows: repeat(0.2fr,1fr,0.4fr);
+    gap: 20px;
+
+  }
+
+  .common-arrow-button-forward{
+    position: absolute;
+    top:400px;
+    right:-120px;
+    left:290px;
+    z-index:1;
+    background-color: transparent;
+    border:none
+  } 
+  .common-arrow-button-back{
+    position: absolute;
+    top:400px;
+    left:-10px;
+    z-index:1;
+    background-color: transparent;
+    border:none
+  } 
+
+  .view-story-div-heading{
+    width: 100%;
+  }
+  .first-div-1{
+  
+  position: absolute;
+  top:20px;
+  width: 100%;
+  }
+  .second-div-1{
+  position: absolute;
+ width: 95%;
+ bottom: 0px;;
+    height: 200px;
+  left: 10px;
+  
+  }
+.view-story-content-heading-1{
+  position: absolute;
+
+top:50px;
+  display: flex;
+  flex-wrap: nowrap;
+  left: 10px;
+  font-size: 16px;
+  height: 40px;
+
+  color: white;
+}
+
+.view-story-content-description-1{
+  position: absolute;
+  top:100px;
+  display: flex;
+  flex-wrap: nowrap;
+  left: 10px;
+  font-size: 16px;
+  height: 40px;
+
+  color: white;
+}
+
+.view-story-div-bookmark-like-1{
+  position: absolute;
+  bottom:10px;
+  
+ 
+    /* position: relative;
+    top: 35px;
+    left: 10px; */
+    justify-content: space-between;
+}
+  .view-story-div-dash-3{
+    /* display: flex;
+    justify-content: space-evenly; */
+   width: 90%;
+   
+    position: relative;
+    bottom: 40px;
+    left:10px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap:15px;
+    
+   
+ }
+ 
+  .view-story-div-dash-4{
+    /* display: flex;
+    justify-content: space-evenly; */
+   width: 90%;
+   
+    position: relative;
+    bottom: 40px;
+    left:10px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:15px;
+    
+   
+ }
+ .view-story-div-dash-6{
+  /* display: flex;
+  justify-content: space-evenly; */
+ width: 90%;
+ 
+  position: relative;
+  bottom: 40px;
+  left:10px;
+ display: grid;
+ grid-template-columns: repeat(6,1fr);
+ gap:15px;
+  
+ 
+}
+.view-story-div-dash-5{
+/* display: flex;
+justify-content: space-evenly; */
+width: 90%;
+
+position: relative;
+bottom: 40px;
+left:10px;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+gap:15px;
+
+
+}
+
+.video-responsive-1{
+object-fit: cover;
+width:350px;
+width: 100%;
+height: 100%;
+
+}
+.view-story-form-responsive-1{
+        
+       
+  gap: 10px;
+ width: 80%;
+ /* height: 100%;   */
+ position: absolute;
+height: 80%;
+ left: 9%;
+top:5%; 
+ /* top: 0;
+ left: 0;
+ /* position: relative;
+   top: 20%; */
+
+ /* max-height: 730px;
+ border: 2px solid white; */
+ display: grid;
+ grid-template-rows: repeat(0.2fr,1fr,0.4fr);
+/*  
+
+ gap: 20px;
+  gap:10px;
+  width:20rem;
+  height:25rem;
+position:fixed;
+top:20%;
+left: 35%; */
+
+/* Group 62 */
+
+display: grid;
+
+gap:20px;
+}
+
+
+.view-story-content-heading-1{
+/* position: absolute; */
+ 
+
+  width: 90%;
+  font-size: 16px;
+  /* display: flex;
+ flex-wrap: nowrap; */
+    color:white
+}
+.view-story-content-description-1{
+/* position: absolute; */
+
+max-width: 350px;
+display: flex;
+flex-wrap: nowrap;
+
+font-size: 16px;
+height: 40px;
+
+
+color:white ;
+
+  width: 100%;
+  font-size: 16px;
+  /* display: flex;
+ flex-wrap: nowrap; */
+    color:white
+}
+.view-story-div-bookmark-like-1{
+
+ position: absolute;
+/* bottom: 5px; */
+display: flex;
+width: 100%;
+
+
+
+justify-content: space-between;
+
+& button{
+background-color: transparent;
+border: none;
+
+}
+}
+
+.view-story-div-bookmark-like-second{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+}
+.liked-slides-count{
+  margin-top: 4px;
+}
+.icon{
+  width: 25px;
+  height: 25px;
+ color: white;
+ border: none;
+  cursor: pointer;
+   &:hover{
+   
+   
+    color: red;
+  }
+  & .l-icon{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.icon-active{
+width: 25px;
+height: 25px;
+
+color: red;
+border: none;
+cursor: pointer;
+ &:hover{
+ 
+ 
+   color: red; 
+}
+& .l-icon{
+  width: 25px;
+  height: 25px;
+}
+}
+
+.bookmark-icon{
+  width: 35px;
+  height: 35px;
+  color: white;
+  border: none;
+  cursor: pointer;
+   &:hover{
+ 
+     color: white;  
+  }
+  & .b-icon{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.bookmark-icon-active{
+
+width: 35px;
+height: 35px;
+border: none;
+color: blue;
+cursor: pointer;
+&:hover{
+ 
+  color: blue  
+}
+& .b-icon{
+  width: 25px;
+  height: 25px;
+}
+}
+
+.download-icon{
+width: 35px;
+height: 35px;
+border: none;
+color:  #FFFFFF;
+
+cursor: pointer;
+
+& .d-icon{
+  width: 25px;
+  height: 25px;
+}
+}
+.download-over-icon{
+width: 35px;
+height: 35px;
+border: none;
+color:  #FFFFFF;
+
+cursor: pointer;
+& .d-icon{
+  width: 25px;
+  height: 25px;
+}
+}
+}
+
+

@@ -1,0 +1,113 @@
+/* .bookmark-story-section{
+    
+} */
+
+.bookmark-story-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookmark-story-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    place-items: center;
+  
+
+}
+.bookmark-story-div-cards{
+    width: 200px;
+    height:250px;
+  
+    cursor: pointer;
+  
+
+   
+}
+
+ .bookmark-story-div-cards-heading{
+    display: flex;
+    position:relative;
+    top:180px;
+  
+    margin-bottom: 10px;
+    color:white;
+    font-size: 20px;
+    padding-left:  1rem;
+    padding-right:  1rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    
+ }
+ .bookmark-story-div-cards-description{
+    display: flex;
+    color:white;
+    position:relative;
+    top:180px;
+    font-size: 20px;
+    padding-left:  1rem;
+    padding-right:  1rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    
+ }
+
+ @media(max-width: 768px){
+
+    .bookmark-story-div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap:10px;
+        place-items: center;
+      
+    
+    }
+    .bookmark-story-div-cards{
+        width: 400px;
+        height:300px;
+       
+        cursor: pointer;
+      
+    
+       
+    }
+    .bookmark-story-div-cards-heading{
+       
+        position:relative;
+        top:220px;
+        
+        margin-bottom: 10px;
+        color:white;
+      
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+     }
+     .bookmark-story-div-cards-description{
+        display: flex;
+        color:white;
+        position:relative;
+        top:220px;
+       
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+     }
+
+     
+ }
