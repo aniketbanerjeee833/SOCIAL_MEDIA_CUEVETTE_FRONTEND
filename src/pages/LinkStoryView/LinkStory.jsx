@@ -140,13 +140,13 @@ export default function LinkStory() {
                    
                     }
                   
-                 const handleShareStory=()=>
-                {
-                  console.log(singleStoryId)
-                  navigator.clipboard.writeText(`http://localhost:5173/singleStory/${singleStoryId}`)
-                  toast.success("link Copied to clipboard")
-                  //dispatch(setLinkStoryOpen(true))
-                }
+                //  const handleShareStory=()=>
+                // {
+                //   console.log(singleStoryId)
+                //   // navigator.clipboard.writeText(`http://localhost:5173/singleStory/${singleStoryId}`)
+                //   // toast.success("link Copied to clipboard")
+                //   //dispatch(setLinkStoryOpen(true))
+                // }
                 
                 let interval;
                 // function startTimer(){
