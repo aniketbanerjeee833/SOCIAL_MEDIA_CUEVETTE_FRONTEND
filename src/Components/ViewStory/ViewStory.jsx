@@ -254,7 +254,8 @@ export default function ViewStory() {
 
   const handleShareStory = () => {
     console.log(singleStoryId)
-    navigator.clipboard.writeText(`http://localhost:5173/singleStory/${singleStoryId}/${currentIndex}`)
+    // navigator.clipboard.writeText(`http://localhost:5173/singleStory/${singleStoryId}/${currentIndex}`)
+    navigator.clipboard.writeText(`https://social-media-cuevette-frontend-three.vercel.app//${singleStoryId}/${currentIndex}`)
     toast.success("link Copied to clipboard")
     //dispatch(setLinkStoryOpen(true))
   }
