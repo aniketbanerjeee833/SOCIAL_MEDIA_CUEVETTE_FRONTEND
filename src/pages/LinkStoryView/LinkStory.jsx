@@ -58,7 +58,7 @@ export default function LinkStory() {
           console.log(singleStoryId)
          
           try {
-            const response = await axios.get(`https://social-media-cuevette-1.onrender.com/api/v1/story/singleStory/${singleStoryId}` );
+            const response = await axios.get(`https://social-media-cuevette.onrender.com/api/v1/story/singleStory/${singleStoryId}` );
             //console.log(response);
       
             setSingleStory(response.data.singleStory)

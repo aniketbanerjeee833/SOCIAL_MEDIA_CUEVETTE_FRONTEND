@@ -50,7 +50,7 @@ export default function ViewStory() {
     console.log(singleStoryId)
 
     try {
-      const response = await axios.get(`https://social-media-cuevette-1.onrender.com/api/v1/story/singleStory/${singleStoryId}`);
+      const response = await axios.get(`https://social-media-cuevette.onrender.com/api/v1/story/singleStory/${singleStoryId}`);
       //console.log(response);
 
       setSingleStory(response.data.singleStory)
@@ -212,7 +212,7 @@ export default function ViewStory() {
 
 
       try {
-        const response = await axios.patch(`https://social-media-cuevette-1.onrender.com/api/v1/story/bookmarkSingleSlide/${slideId}`,
+        const response = await axios.patch(`https://social-media-cuevette.onrender.com/api/v1/story/bookmarkSingleSlide/${slideId}`,
           { newBookmarks1 },
           {
             headers: {
@@ -309,7 +309,7 @@ console.log("url",url)
 //     const url1=url
 // //const url1=`http://localhost:5173/singleStory/${url}`
 //   console.log(url1)
-//   const response = await axios.get('https://social-media-cuevette-1.onrender.com/story/handleDownload',{url1} ,{
+//   const response = await axios.get('https://social-media-cuevette.onrender.com/story/handleDownload',{url1} ,{
     
 //     headers:{
 //       Authorization:`Bearer ${token}`

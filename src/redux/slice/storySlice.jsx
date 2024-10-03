@@ -168,7 +168,7 @@ export const getAllMyStories = () => async (dispatch) => {
   const token=JSON.parse(localStorage.getItem("APP-TOKEN"))
     dispatch(storySlice.actions.getAllStoriesRequest());
     try {
-      const response = await axios.get("https://social-media-cuevette-1.onrender.com/api/v1/story/allStories",{
+      const response = await axios.get("https://social-media-cuevette.onrender.com/api/v1/story/allStories",{
         headers:{
           Authorization:`Bearer ${token}`
         }
@@ -188,7 +188,7 @@ export const getAllMyStories = () => async (dispatch) => {
       console.log(categoryArray)
     
       try {
-        const response = await axios.get(`https://social-media-cuevette-1.onrender.com/api/v1/story/storiesByCategory/${categoryArray}`,
+        const response = await axios.get(`https://social-media-cuevette.onrender.com/api/v1/story/storiesByCategory/${categoryArray}`,
           {
             headers:{
               Authorization:`Bearer ${token}`
@@ -216,7 +216,7 @@ export const getAllMyStories = () => async (dispatch) => {
         console.log(singleStoryId,slideId)
         
         try {
-          const response = await axios.put(`https://social-media-cuevette-1.onrender.com/api/v1/story/likeOrDislike/${singleStoryId}`, {slideId},
+          const response = await axios.put(`https://social-media-cuevette.onrender.com/api/v1/story/likeOrDislike/${singleStoryId}`, {slideId},
            
               {
                 headers:{
@@ -241,7 +241,7 @@ export const getAllMyStories = () => async (dispatch) => {
       //   console.log(slideId)
         
       //   try {
-      //     const response = await axios.patch(`https://social-media-cuevette-1.onrender.com/api/v1/story/bookmarkSingleSlide/${slideId}`, 
+      //     const response = await axios.patch(`https://social-media-cuevette.onrender.com/api/v1/story/bookmarkSingleSlide/${slideId}`, 
       //       {
       //       headers:{
       //         Authorization:`Bearer ${token} `
@@ -263,7 +263,7 @@ export const getAllMyStories = () => async (dispatch) => {
         console.log(slideId)
         
         try {
-          const response = await axios.get(`https://social-media-cuevette-1.onrender.com/api/v1/story/bookmarkSingleSlide/${slideId}`, 
+          const response = await axios.get(`https://social-media-cuevette.onrender.com/api/v1/story/bookmarkSingleSlide/${slideId}`, 
             {
             headers:{
               Authorization:`Bearer ${token} `

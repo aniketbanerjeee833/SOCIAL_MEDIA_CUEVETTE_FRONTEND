@@ -146,7 +146,7 @@ export default function Home() {
     const handleLogout = async () => {
         ///
         try {
-            const response = await axios.get("https://social-media-cuevette-1.onrender.com/api/v1/user/logout", {
+            const response = await axios.get("https://social-media-cuevette.onrender.com/api/v1/user/logout", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

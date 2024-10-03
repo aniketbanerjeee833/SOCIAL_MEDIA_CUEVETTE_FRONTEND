@@ -2009,7 +2009,7 @@ const[six,setSix]=useState(false)
           
             try {
              
-              const response = await axios.post("https://social-media-cuevette-1.onrender.com/api/v1/story/create",
+              const response = await axios.post("https://social-media-cuevette.onrender.com/api/v1/story/create",
                 {category,slidesInStory},
                 {
                   withCredentials: true,
