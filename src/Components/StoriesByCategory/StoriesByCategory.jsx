@@ -1047,7 +1047,7 @@ export default function StoriesByCategory() {
                         )}
                              
           
-                              {Object.keys(user).length!==0 && use._id==curStory._id&&<div className='edit-button-div-1'>
+                              {Object.keys(user).length!==0 && user._id==curStory._id&&<div className='edit-button-div-1'>
                            <button type="button" onClick={(e)=>handleEditSlide(e,curStory._id)}>
                            <BsPencilSquare className='edit-icon'/>
                            Edit </button>
