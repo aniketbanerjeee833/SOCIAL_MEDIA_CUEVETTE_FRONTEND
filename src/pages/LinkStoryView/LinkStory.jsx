@@ -101,21 +101,7 @@ export default function LinkStory() {
                   //dispatch(getLikesCount(id,slideId))
               }
   
-              const handleLikeIcon=(slideId)=>
-              {
-                console.log("hello")
-                console.log(myIds,"myIds")
-              console.log(singleStoryId)
-                if(isAuthenticated==true){
-                  dispatch(likeOrDislikeStory(singleStoryId,slideId))
-                  dispatch(getLikesCount(id,slideId))
-                }else if(isAuthenticated==false){
-                  dispatch(setIsViewStoryOpen(false))
-                  dispatch(setRedirectToLogin(true))
-                  dispatch(setIsLogin(true))
-                  dispatch(setCurrentState("login"))
-  
-                }
+             
                
              
              
@@ -123,22 +109,14 @@ export default function LinkStory() {
              
   
                 
-              }
+              
               const handleSlides=()=>
               {
                 
                 dispatch(getLikesCount(id,slideId))
                 
               }
-              
-              const handleBookmarkIcon=(slideId)=>
-                {
-  
-                    console.log(token,slideId,"hello")
-                  dispatch(bookmarkStory(slideId,token))
-  
-                   
-                    }
+            
                   
                 //  const handleShareStory=()=>
                 // {
@@ -321,27 +299,7 @@ export default function LinkStory() {
                  {viewMore ? "...Less" : ".....More"}
                       </div>}
   
-                  <div className='view-story-div-bookmark-like' >
-  
-                  <div className='view-story-div-bookmark-like-first'>
-  
-                <button type="button" onClick={()=>handleBookmarkIcon()}>
-                <CiBookmark  className='bookmark-icon'  />
-                </button>
-                </div>
-                   
-                    <div className='view-story-div-bookmark-like-second'>
-                    {<button  type="button" onClick={()=>handleLikeIcon(slideId)}>
-                    <CiHeart   className= {`  ${hasLiked.includes(slideId)?"icon-active":"icon"}`} 
-                 />
-                 </button>}
-  
-                  
-                    <span className='liked-slides-count'>{likedSlidesCount}</span>
-                    </div>
-                
-                 
-                    </div>   
+                    
               </div>
               </div>)}
              
@@ -439,27 +397,7 @@ export default function LinkStory() {
                {viewMore ? "...Less" : ".....More"}
                     </div>}
 
-                <div className='view-story-div-bookmark-like-1' >
-
-                <div className='view-story-div-bookmark-like-first'>
-
-              <button type="button" onClick={()=>handleBookmarkIcon()}>
-              <CiBookmark  className='bookmark-icon'  />
-              </button>
-              </div>
                  
-                  <div className='view-story-div-bookmark-like-second'>
-                  {<button  type="button" onClick={()=>handleLikeIcon(slideId)}>
-                  <CiHeart   className= {`  ${hasLiked.includes(slideId)?"icon-active":"icon"}`} 
-               />
-               </button>}
-
-                
-                  <span className='liked-slides-count'>{likedSlidesCount}</span>
-                  </div>
-              
-               
-                  </div>   
             </div>
             </div>)}
 
@@ -553,27 +491,7 @@ export default function LinkStory() {
                {viewMore ? "...Less" : ".....More"}
                     </div>}
 
-                <div className='view-story-div-bookmark-like-1' >
-
-                <div className='view-story-div-bookmark-like-first'>
-
-              <button type="button" onClick={()=>handleBookmarkIcon()}>
-              <CiBookmark  className='bookmark-icon'  />
-              </button>
-              </div>
-                 
-                  <div className='view-story-div-bookmark-like-second'>
-                  {<button  type="button" onClick={()=>handleLikeIcon(slideId)}>
-                  <CiHeart   className= {`  ${hasLiked.includes(slideId)?"icon-active":"icon"}`} 
-               />
-               </button>}
-
                 
-                  <span className='liked-slides-count'>{likedSlidesCount}</span>
-                  </div>
-              
-               
-                  </div> 
            
            </div>
            </div> } 
@@ -671,27 +589,7 @@ export default function LinkStory() {
                {viewMore ? "...Less" : ".....More"}
                     </div>}
 
-                <div className='view-story-div-bookmark-like-1' >
-
-                <div className='view-story-div-bookmark-like-first'>
-
-              <button type="button" onClick={()=>handleBookmarkIcon()}>
-              <CiBookmark  className='bookmark-icon'  />
-              </button>
-              </div>
                  
-                  <div className='view-story-div-bookmark-like-second'>
-                  {<button  type="button" onClick={()=>handleLikeIcon(slideId)}>
-                  <CiHeart   className= {`  ${hasLiked.includes(slideId)?"icon-active":"icon"}`} 
-               />
-               </button>}
-
-                
-                  <span className='liked-slides-count'>{likedSlidesCount}</span>
-                  </div>
-              
-               
-                  </div>   
             </div>
             </div>)}
            

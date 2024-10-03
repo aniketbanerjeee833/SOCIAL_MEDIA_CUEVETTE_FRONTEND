@@ -106,7 +106,7 @@ export default function Home() {
 
                 //     return prevState.filter((curElem)=>curElem!=="all")
                 // }
-                return !prevState.includes(category) ? [...prevState, category] : prevState
+                return !prevState.includes(category) ? [...prevState, category] : prevState.filter((cur)=>cur!=category)
             })
             // setCategoryArray4((prevState)=>{
             //              if(prevState.includes("all")){
