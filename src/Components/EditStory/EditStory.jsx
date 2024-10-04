@@ -77,7 +77,7 @@ export default function EditStory() {
         console.log(singleStoryId)
       
         try {
-          const response = await axios.get(`https://social-media-cuevette.onrender.com/api/v1/story/singleStory/${singleStoryId}` ,
+          const response = await axios.get(`http://localhost:5000/api/v1/story/singleStory/${singleStoryId}` ,
             {
               headers:{
                 Authorization:`Bearer ${token}`
@@ -2491,7 +2491,7 @@ console.log(category)
          
                   try {
                    
-                    const response = await axios.put(`https://social-media-cuevette.onrender.com/api/v1/story/update/${singleStoryId}`,
+                    const response = await axios.put(`http://localhost:5000/api/v1/story/update/${singleStoryId}`,
                       {category,newSlidesInStory},
                       {
                         withCredentials: true,

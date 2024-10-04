@@ -48,7 +48,7 @@ export default function Login() {
 
       try {
 
-        const response = await axios.post(`https://social-media-cuevette.onrender.com/api/v1/user/login`, { userName, password },
+        const response = await axios.post(`http://localhost:5000/api/v1/user/login`, { userName, password },
           { headers: { "Content-Type": "application/json" }, withCredentials: true, }
         )
 
@@ -108,7 +108,7 @@ export default function Login() {
 
 
       try {
-        const response = await axios.post(`https://social-media-cuevette.onrender.com/api/v1/user/register`, { userName, password },
+        const response = await axios.post(`http://localhost:5000/api/v1/user/register`, { userName, password },
           { withCredentials: true, headers: { "Content-Type": "application/json" } }
         )
         console.log(response)

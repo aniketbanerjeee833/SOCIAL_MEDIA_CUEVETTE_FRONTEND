@@ -3,7 +3,7 @@ import Login from '../../Components/Login/Login';
 import "./Home.css"
 import { useDispatch, useSelector } from "react-redux"
 import {
-    fetchUser, getRefresh, getUser, logoutFailed, logoutSuccess,
+    fetchUser, getLikesCount, getRefresh, getUser, logoutFailed, logoutSuccess,
     setCurrentState, setIsAuthenticated, setIsBookmarkStoryOpen, setIsCreateStory,
     setIsLogin, setLoginError, setRegisterError, setResponsiveDiv, setToken,
     viewBookmarkStories,
@@ -146,7 +146,7 @@ export default function Home() {
     const handleLogout = async () => {
         ///
         try {
-            const response = await axios.get("https://social-media-cuevette.onrender.com/api/v1/user/logout", {
+            const response = await axios.get("http://localhost:5000/api/v1/user/logout", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -215,14 +215,15 @@ export default function Home() {
         dispatch(setResponsiveDiv(false))
     }
 
-
-
     useEffect(() => {
         dispatch(getAllMyStories())
         // setCategoryArray3([])
+        
+      
+      
+      }, [isAuthenticated])
 
 
-    }, [isAuthenticated])
     return (
         <>
             <section className='home-section'>

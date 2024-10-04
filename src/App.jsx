@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchUser } from "./redux/slice/userSlice";
 import LinkStory from "./pages/LinkStoryView/LinkStory";
 
+
 export default function App() {
   const dispatch=useDispatch()
   const{isAuthenticated}=useSelector((state)=>state.user)
@@ -16,6 +17,7 @@ export default function App() {
     dispatch(fetchUser())
 
 }, []);
+
 
     return (
      <BrowserRouter>
