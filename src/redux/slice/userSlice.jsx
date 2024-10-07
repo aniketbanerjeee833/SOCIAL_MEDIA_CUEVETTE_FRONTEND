@@ -147,7 +147,7 @@ const userSlice=createSlice({
     
        
     //     try {
-    //       const response = await axios.get("http://localhost:5000/api/v1/user/allStories",{
+    //       const response = await axios.get("https://social-media-cuevette.onrender.com/api/v1/user/allStories",{
          
     //       });
     //       console.log(response);
@@ -164,7 +164,7 @@ const userSlice=createSlice({
       const token=JSON.parse(localStorage.getItem("APP-TOKEN"))
         dispatch(userSlice.actions.fetchUserRequest());
         try {
-          const response = await axios.get("http://localhost:5000/api/v1/user/me",
+          const response = await axios.get("https://social-media-cuevette.onrender.com/api/v1/user/me",
             {
               headers:{
                 Authorization:`Bearer ${token}`
@@ -187,7 +187,7 @@ const userSlice=createSlice({
         const token=JSON.parse(localStorage.getItem("APP-TOKEN"))
         dispatch(userSlice.actions.getBookmarkStoriesRequest());
         try {
-          const response = await axios.get("http://localhost:5000/api/v1/user/bookmarkStories", 
+          const response = await axios.get("https://social-media-cuevette.onrender.com/api/v1/user/bookmarkStories", 
               {
                 headers:{
             Authorization:`Bearer ${token}`
@@ -209,7 +209,7 @@ const userSlice=createSlice({
         console.log(singleStoryId,slideId)
         dispatch(userSlice.actions?.getLikedStoriesRequest());
         try {
-          const response = await axios.get(`http://localhost:5000/api/v1/user/likeSlidesCount/${singleStoryId}/${slideId}`,
+          const response = await axios.get(`https://social-media-cuevette.onrender.com/api/v1/user/likeSlidesCount/${singleStoryId}/${slideId}`,
 
            { 
             headers:{
@@ -233,7 +233,7 @@ const userSlice=createSlice({
 
     // export const logout = () => async (dispatch) => {
       //   try {
-      //     const response = await axios.get("http://localhost:5000/api/v1/user/logout",{ withCredentials: true });
+      //     const response = await axios.get("https://social-media-cuevette.onrender.com/api/v1/user/logout",{ withCredentials: true });
       //     dispatch(userSlice.actions.logoutSuccess());
       //     // dispatch(userSlice.actions.getRefresh())
       //     toast.success(response.data.message);
